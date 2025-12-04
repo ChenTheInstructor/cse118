@@ -18,12 +18,12 @@ public class Demo {
 		System.out.println("The result of the operation is: " + r);
 	}
 
-	public static double compute(int num1, int num2, char operator) {
-		double result = switch (operator) {
-		case '+' -> (num1 + num2);
-		case '-' -> (num1 - num2);
-		case '*' -> (num1 * num2);
-		case '/' -> (num1 / num2);
+	public static double compute(int n1, int n2, char op) {
+		double result = switch (op) {
+		case '+' -> (n1 + n2);
+		case '-' -> (n1 - n2);
+		case '*' -> (n1 * n2);
+		case '/' -> (n1 / n2);
 		default -> Double.MAX_VALUE;
 		};
 		return result;
